@@ -1,14 +1,11 @@
 public class Mainmeth {
     public static void main(String[] args) {
-        MusicArtist artist = new MusicArtist("John Doe", "Rock");
-        MusicArtist
-
-
-
+        Music artist = new Music("John Doe", "Rock");
+        System.out.println();
         }
 
 
-        System.out.println();
+
 
     }
-}
+
