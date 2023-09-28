@@ -1,6 +1,6 @@
 public interface ArtistInterface {
     void perform();
     void displayInfo();
-    void addSong(String nameSomg);
+    void addSong(String nameSong);
 
 }
