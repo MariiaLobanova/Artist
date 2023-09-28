@@ -14,7 +14,9 @@ public class Customer {
 
     public static void main(String[] args) {
 
-        Customer customer1 = new Customer("Banana");
-        customer1.addToCart("Elena");
+
+        Customer customer1 = new Customer("Elena");
+        customer1.addToCart("Item1");
+        System.out.println("Hello from Elena!");
     }
 }
