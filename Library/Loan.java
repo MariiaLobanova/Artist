@@ -1,5 +1,8 @@
 package Library;
 
+//Attributes: book, member, dueDate
+//Methods: initiateLoan(), terminateLoan()
+
  public class Loan {
      private String book;
      private int IDmember;

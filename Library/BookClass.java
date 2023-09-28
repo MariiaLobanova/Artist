@@ -2,7 +2,7 @@ package Library;
 //Book Class
 //Attributes: title, author, ISBN
 //Methods: getBookInfo(), isAvailable()
-public class BookClass(String title, String author, String ISBN) {
+public class BookClass {
     private String title;
     private String author;
     private String ISBN;
