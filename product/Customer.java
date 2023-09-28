@@ -16,5 +16,6 @@ public class Customer {
 
         Customer customer1 = new Customer("Elena");
         customer1.addToCart("Item1");
+        System.out.println("Hello from Elena!");
     }
 }
