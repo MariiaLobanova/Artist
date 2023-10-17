@@ -1,29 +1,60 @@
 package Library;
-//Book Class
-//Attributes: title, author, ISBN
-//Methods: getBookInfo(), isAvailable()
+// Create a Book class with fields like id, title, isbn, and author.
 public class BookClass {
-    private String title;
-    private String author;
-    private String ISBN;
-    private boolean available;
 
-    public BookClass() {
+    @ISBN
+    private String isbn;
+    @BookInfo
+    private String title;
+    @BookInfo
+    private String author;
+    @BookInfo
+    private  int yearPublished;
+
+    public BookClass(String isbn, String title, String author, int yearPublished) {
+        this.isbn = isbn;
         this.title = title;
         this.author = author;
-        this.ISBN = ISBN;
-        this.available = available;
+        this.yearPublished = yearPublished;
     }
-    public void getBookInfo() {
-        System.out.println("Title: " + title);
-        System.out.println("Author: " + author);
-        System.out.println("ISBN: " + ISBN);
-        System.out.println("Available: " + (available ? "Yes" : "No"));
+
+    public String getIsbn() {
+        return isbn;
     }
-    public boolean isAvailable() {
-        return available;
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
-    public void setAvailable(boolean available) {
-        this.available = available;
+
+    public String getTitle() {
+        return title;
     }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public int getYearPublished() {
+        return yearPublished;
+    }
+
+    public void setYearPublished(int yearPublished) {
+        this.yearPublished = yearPublished;
+    }
+
+    public void info (String name, String title, String autor, int yearPublished){
+
+    }
+}
+
+
+
+

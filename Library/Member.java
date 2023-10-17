@@ -1,23 +1,19 @@
 package Library;
 
-//Attributes: name, borrowedBooks
-//Methods: borrowBook(), returnBook()
+// Create a Member class with fields like id, name, and email.
+
 
 public class Member {
-
+    @Email
+    private String email;
     private String name;
-    private String borrowBook;
+    private int id;
 
-    public Member(String name, String borrowedBook) {
-        this.name = name;
-        this.borrowBook = borrowedBook;
+    public Member(String email) {
+        this.email=email;
+    }
+    public String getEmail(){
+        return email;
     }
 
-    public void borrowBook() {
-        System.out.println(name + "took a book " + borrowBook);
-    }
-
-    public void returnBook() {
-        System.out.println(name + "has to return the book" + borrowBook + "in 2 week");
-    }
 }

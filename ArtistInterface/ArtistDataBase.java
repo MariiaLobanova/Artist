@@ -1,3 +1,5 @@
+package ArtistInterface;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -11,11 +13,19 @@ public class ArtistDataBase {
     public void removeArtist(Artist artist){
         artists.remove(artist);
     }
-    public List<Artist>searchByName(String name){
-        return artists.stream()
-                .filter(artist -> artist.getName().equalsIgnoreCase(name))
-                .collect(Collectors.toList());
+    public List<Artist> searchByName(String name) {
+        List<Artist> matchingArtists = new ArrayList<>();
+
+        for (Artist artist : artists) {
+            if (artist.getName().equalsIgnoreCase(name)) {
+                matchingArtists.add(artist);
+            }
+        }
+
+        return matchingArtists;
     }
+
+
 
     public List<Artist> getallArtists() {
         return artists;

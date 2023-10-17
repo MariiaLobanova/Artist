@@ -1,3 +1,5 @@
+package ArtistInterface;
+
 public class ArtistImplementation implements Artist {
     private String name;
     private int age;
